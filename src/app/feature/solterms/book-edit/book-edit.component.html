@@ -3,12 +3,12 @@
     <mat-card-content>
       <form [formGroup]="bookForm" (ngSubmit)="createBook()">
         <mat-form-field class="book-full-width">
-          <input matInput placeholder="Titre" formControlName="title" />
-          <mat-hint align="start"><strong>Titre</strong></mat-hint>
+          <input matInput placeholder="Title" formControlName="title" />
+          <mat-hint align="start"><strong>Title</strong></mat-hint>
         </mat-form-field>
 
         <mat-form-field>
-          <mat-select placeholder="Auteur" formControlName="author">
+          <mat-select placeholder="Author" formControlName="author">
             <mat-option>None</mat-option>
             <mat-option *ngFor="let author of authors | async" [value]="author">{{
               author.name
@@ -38,7 +38,7 @@
         <mat-form-field>
           <textarea
             matInput
-            placeholder="Résumé"
+            placeholder="Resume"
             formControlName="summary"
             rows="10"
           ></textarea>
@@ -57,7 +57,8 @@
         <br>
         <mat-form-field class="book-full-width">
           <input matInput placeholder="URL" formControlName="external" />
-          <mat-hint align="start"><strong>Où le récupérer</strong></mat-hint>
+          <mat-hint align="start"><strong>Where to get it
+          </strong></mat-hint>
         </mat-form-field>
 
 

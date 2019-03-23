@@ -3,8 +3,10 @@
       <mat-card-content>
         <form [formGroup]="shipForm" (ngSubmit)="createShip()">
           <mat-form-field class="person-full-width">
-            <input matInput placeholder="Nom du vaisseau" formControlName="name" />
-            <mat-hint align="start"><strong>Nom du bateau</strong></mat-hint>
+            <input matInput placeholder="Name of the boat
+            " formControlName="name" />
+            <mat-hint align="start"><strong>Name of the boat
+            </strong></mat-hint>
           </mat-form-field>
           <br>
           <mat-form-field>
@@ -26,14 +28,17 @@
           </mat-form-field>
           <br>
           <mat-form-field class="person-full-width">
-            <input matInput placeholder="Ingénieur" formControlName="engineerID" />
-            <mat-hint align="start"><strong>Constructeur</strong></mat-hint>
+            <input matInput placeholder="Engineer" formControlName="engineerID" />
+            <mat-hint align="start"><strong> Manufacturer
+            </strong></mat-hint>
           </mat-form-field>
         <br />
 
         <mat-form-field class="person-full-width">
-          <input matInput placeholder="Chantier Naval" formControlName="asernalID" />
-          <mat-hint align="start"><strong>Chantier Naval</strong></mat-hint>
+          <input matInput placeholder="Shipyard
+          " formControlName="asernalID" />
+          <mat-hint align="start"><strong>Shipyard
+          </strong></mat-hint>
         </mat-form-field>
       <br />
           <mat-form-field>

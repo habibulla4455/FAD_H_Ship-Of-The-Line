@@ -14,7 +14,7 @@
         style="text-decoration:none"
         color="primary"
       >
-        SOL
+        Ship Of The Line
       </a>
     </mat-toolbar>
     <mat-nav-list>
@@ -33,7 +33,7 @@
         routerLinkActive="router-link-active"
       >
         <mat-icon matListIcon>view_list</mat-icon>
-        <span>Glossaire</span></a
+        <span>Glossary</span></a
       >
       <a
         *ngIf="(auth.afAuth.authState | async) as user"
@@ -109,7 +109,7 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>solxviii</span> <span class="spacer"></span>
+      <span>Ship Of The Line </span> <span class="spacer"></span>
       <div *ngIf="(auth.afAuth.authState | async) as user; else showLogin">
         <span>Hi {{ user.displayName }}!</span>
         <button mat-button (click)="auth.logout()">Logout</button>
